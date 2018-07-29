@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <mata charset="utf-8"></mata>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="header">
+    <div class="headerWrap">
+      <a class="logo">M</a>
+      <ul class="menu">
+        <li class="mItem"><a href="#intro">Intro</a></li>
+        <li class="mItem"><a href="#portfolio">Portfolio</a></li>
+        <li class="mItem"><a href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+<%= yield %>
+  <div class="footer">
+    <a href="#" class="sns"><i class="fab fa-facebook-square"></i></a>
+    <a href="#" class="sns"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="sns"><i class="fab fa-linkedin"></i></a>
+  </div>
+</body>
+</html>
