@@ -1,0 +1,44 @@
+@media (min-width: 481px) and (max-width: 767px) {
+  .header .menu {
+      display: none;
+  }
+
+  
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .header .menu {
+      display: none;
+  }
+  .mobileMenuBtn {
+      display: inline-block;
+      /*font-size: 30px;*/
+      position: absolute;
+      right: 18%;
+      top: 10px;
+  }
+  .mobileMenuBtn svg {
+    transform: rotate(90deg);
+  }
+  .mobileMenu {
+      display: inline-block;
+      position: fixed;
+      width: 80%;
+      left: -100%;
+      top: 0;
+      bottom: 0;
+      background-color: #fff;
+      z-index: 105;
+  }
+  .m-background {
+      background-color: #00000050;
+        z-index: 104;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: none;
+  }
+  
+}
